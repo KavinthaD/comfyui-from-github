@@ -8,8 +8,9 @@ RUN pip install --no-cache-dir opencv-python opencv-contrib-python
 RUN cd /comfyui/custom_nodes/ && \
     git clone --depth 1 https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG.git
 
+# Install WAS Node Suite which includes Image Crop Face node
 RUN cd /comfyui/custom_nodes/ && \
-    git clone --depth 1 https://github.com/ssitu/ComfyUI_Image_Crop_Face.git
+    git clone --depth 1 https://github.com/WASasquatch/was-node-suite-comfyui.git
 
 RUN cd /comfyui/custom_nodes/ && \
     git clone --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git
