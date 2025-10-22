@@ -10,7 +10,6 @@ RUN cd /comfyui/custom_nodes/ && \
 
 # Install WAS Node Suite which includes Image Crop Face node
 RUN cd /comfyui/custom_nodes/ && \
-    git clone --depth 1 https://github.com/WASasquatch/was-node-suite-comfyui.git
+    git clone --depth 1 https://github.com/ltdrdata/was-node-suite-comfyui.git
 
-RUN cd /comfyui/custom_nodes/ && \
-    git clone --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git
+# ComfyUI-Manager is already included in the base image, no need to install it
