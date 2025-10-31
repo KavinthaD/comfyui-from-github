@@ -17,6 +17,9 @@ RUN comfy-node-install \
     https://github.com/rgthree/rgthree-comfy \
     https://github.com/kijai/ComfyUI-KJNodes
 
+# Install git for branch checkout
+RUN apt-get update && apt-get install -y git
+
 # Special handling for ComfyUI-SeedVR2_VideoUpscaler (switch to nightly branch)
 RUN cd /comfyui/custom_nodes/ComfyUI-SeedVR2_VideoUpscaler && git checkout nightly
 
