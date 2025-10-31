@@ -30,6 +30,9 @@ RUN cd /comfyui/custom_nodes/ComfyUI_LayerStyle_Advance && pip install -r requir
 RUN cd /comfyui/custom_nodes/ComfyUI-Florence2 && pip install -r requirements.txt
 RUN cd /comfyui/custom_nodes/ComfyUI_Comfyroll_CustomNodes && pip install -r requirements.txt
 RUN cd /comfyui/custom_nodes/ComfyUI-KJNodes && pip install -r requirements.txt
+RUN cd /comfyui/custom_nodes/Civicomfy && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+RUN cd /comfyui/custom_nodes/ComfyUI-Custom-Scripts && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+RUN cd /comfyui/custom_nodes/rgthree-comfy && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
 # Download models
 # 16GB SeedVR2 Upscaler
